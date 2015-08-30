@@ -10,8 +10,9 @@ import java.nio.file.Files;
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
 /**
- *
+ * FileDemo
  * @author nabana
+ * http://docs.oracle.com/javase/jp/8/api/java/io/File.html
  */
 public class FileDemo {
 
@@ -38,11 +39,16 @@ public class FileDemo {
                 
                 //copy
                 File copy_file = new File(file.getParent() + "\\copy");
+                //上書きコピー                
                 Files.copy(file.toPath(), copy_file.toPath(), REPLACE_EXISTING);
                 System.out.println("Copy");
                 
                 // rename
-                System.out.println("renameTo " + copy_file.renameTo(new File(copy_file.getParent() + "\\rename")));
+                File rename = new File(copy_file.getParent() + "\\rename");
+                if (rename.exists()){
+                    rename.delete();
+                }
+                System.out.println("renameTo " + copy_file.renameTo(rename));
                 
             }else{
                 System.out.println("Not file.canRead()");
