@@ -18,3 +18,5 @@ src/bufferedwriterreaderdemo/buffered_write_file
 build/classes/bufferedwriterreaderdemo/buffered_write_file
 build/classes/printwriterdemo/printwriter_file.txt
 *.txt
+build/classes/bufferedinputoutputstreamdemo/buffered_stream_file
+src/bufferedinputoutputstreamdemo/buffered_stream_file
