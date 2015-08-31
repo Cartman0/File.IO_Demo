@@ -16,3 +16,5 @@ src/filedemo/rename
 build/classes/filedemo/rename
 src/bufferedwriterreaderdemo/buffered_write_file
 build/classes/bufferedwriterreaderdemo/buffered_write_file
+build/classes/printwriterdemo/printwriter_file.txt
+*.txt
