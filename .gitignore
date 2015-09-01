@@ -23,3 +23,5 @@ build/classes/datainputoutputstreamdemo/data_output_stream_file
 src/datainputoutputstreamdemo/data_output_stream_file
 nbproject/private/private.xml
 *.tmp
+build/classes/serializabledemo/serialize_file
+src/serializabledemo/serialize_file
